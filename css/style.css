@@ -64,12 +64,12 @@ main {
 }
 
 .mainImg {
-  max-width: 50%;
-    height: 15%;
-    margin: 5px auto 10px auto;
-    display: block;
-    border-radius: 8px;
-    border: 5px solid black;
+  max-width: 60%;
+  height: 15%;
+  margin: 5px auto 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: 5px solid black;
 }
 
 ul {
