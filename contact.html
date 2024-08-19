@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <script src=""></script>
+        <link rel="icon" type="image/x-icon" href="images/Steel_Mountain_Emerson_20240818.ico">
     </head>
 
     <body>
@@ -26,41 +26,14 @@
             <h2>Contact</h2>
             <br><br>
 
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkfUUrRmfMT8kbGfRMlk-Y9N_aieaTQuE&loading=async&callback=initMap" async></script>
-              
-            <script>
-                let map;
-
-                const position = {lat: 43.19567228657235, lng: -80.0142198154744};
-
-                async function initMap() {
-
-                    const { Map } = await google.maps.importLibrary("maps");
-                    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-                    map = new google.maps.Map(document.getElementById("map"), {
-                        center: position,
-                        zoom: 15,
-                        mapId: "Class_Map_ID",
-                    });
-
-                    const marker = new AdvancedMarkerElement({
-                        map: map,
-                        position: position,
-                        title: "Class Location",
-                    });
-                }
-
-            </script>
-
-            <div id="map"></div>
+            <img src="images/tempMap.png" />
 
             <br><br>
 
             <div style="text-align: left;">
                 <h3>Information:</h3>
                 <p>1040 Garner Rd. W, Unit 205<br>Ancaster, ON, Canada<br><br>
-                    WhatsApp: 647-206-5770<br>E-Mail: <a href="mailto:kidsfitmartialarts@hotmail.com">kidsfitmartialarts@hotmail.com</a></p>
+                    WhatsApp: 647-206-5770<br>E-Mail: <a href="mailto:steelmountainmartialarts@gmail.com">steelmountainmartialarts@gmail.com</a></p>
             </div>
 
             <br /><br />
