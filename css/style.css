@@ -49,8 +49,8 @@ main {
 }
 
 .logo {
-    width: 25%;
-    height: 25%;
+    height: 15%;
+    width: 15%;
     display: block;
     margin: 2px auto auto auto;
 }
@@ -64,8 +64,8 @@ main {
 }
 
 .mainImg {
-    max-width: 60%;
-    height: auto; 
+  max-width: 50%;
+    height: 15%;
     margin: 5px auto 10px auto;
     display: block;
     border-radius: 8px;
@@ -139,4 +139,10 @@ ul {
   th {
     background-color: #2a90dd;
     color: white;
+  }
+
+  .plainTable {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
   }
