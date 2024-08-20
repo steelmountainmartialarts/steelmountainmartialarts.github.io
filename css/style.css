@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: phattFont;
+  src: url(phatt_font.otf);
+}
+
+@font-face {
+  font-family: phattOutline;
+  src: url(phatt_outline.otf);
+}
+
+@font-face {
+  font-family: kaushanFont;
+  src: url(KaushanScript-Regular.ttf);
+}
+
 body {
     padding-bottom: 200px;
     min-height: 100vh;
@@ -13,10 +28,14 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-size:larger;
-    margin-bottom: 10px;
-    font-style: italic;
+  font-family: phattFont;
+  text-align: center;
+  font-size: 2.3vh;
+}
+
+h2 {
+  font-family: phattFont;
+  text-align: center;
 }
 
 footer {
@@ -28,7 +47,7 @@ footer {
     text-align: center;
     color: white;
     font-size: smaller;
-    border-top: 5px solid black;    
+    border-top: 3px solid black;    
 }
 
 main {   
@@ -38,21 +57,10 @@ main {
     text-align: center;
 }
 
-#map {
-    display: block;
-    align-self: center;
-    border: 5px solid black;
-    border-radius: 10px;
-    height: 50vh;
-    width: 80%;
-    margin: 4px auto 4px auto;
-}
-
 .logo {
-    height: 15%;
-    width: 15%;
-    display: block;
-    margin: 2px auto auto auto;
+  width: 12vh;
+  display: block;
+  margin: 10px auto 10px auto;
 }
 
 .gallery {
@@ -64,12 +72,18 @@ main {
 }
 
 .mainImg {
-  max-width: 60%;
+  max-width: 70%;
   height: 15%;
   margin: 5px auto 10px auto;
   display: block;
   border-radius: 8px;
-  border: 5px solid black;
+  border: 3px solid black;
+}
+
+.wesImg {
+  border: 3px solid black;
+  border-radius: 6px;
+  width: 45%;
 }
 
 ul {
@@ -78,28 +92,29 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #434343;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     text-align: center;
   }
 
   li {
     display: inline-block;
+    font-family: phattOutline;
+    font-size: larger;
   }
   
   li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 30px;
+    padding: 18px 30px;
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #2a90dd;
     border-radius: 5px;
-    font-weight: bold;
+    font-family: phattFont;
   }
 
   img {
@@ -139,10 +154,35 @@ ul {
   th {
     background-color: #2a90dd;
     color: white;
+    font-family: phattFont;
   }
 
   .plainTable {
     border: none;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .mainImg {
+      max-width: 100%;
+      margin: 2px auto 10px auto;
+      display: block;
+      border-radius: 6px;
+      border: 2px solid black;
+    }
+
+    .wesImg {
+      width: 80%;
+    }
+
+    li {
+      font-size: smaller;
+    }
+
+    .plainTable {
+      margin: 15px;
+      font-size: smaller;
+    }
   }
