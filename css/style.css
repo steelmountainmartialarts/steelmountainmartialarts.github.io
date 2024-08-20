@@ -1,9 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/*--- Fonts ---*/
 @font-face {
   font-family: phattFont;
   src: url(phatt_font.otf);
@@ -19,12 +20,13 @@
   src: url(KaushanScript-Regular.ttf);
 }
 
+/*--- HTML Elements ---*/
 body {
-    padding-bottom: 200px;
-    min-height: 100vh;
-    position: relative;
-    font-size: larger;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 200px;
+  min-height: 100vh;
+  position: relative;
+  font-size: larger;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -39,24 +41,25 @@ h2 {
 }
 
 footer {
-    background-color: #434343;
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 40px;
-    text-align: center;
-    color: white;
-    font-size: smaller;
-    border-top: 3px solid black;    
+  background-color: #434343;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: smaller;
+  border-top: 3px solid black;    
 }
 
 main {   
-    width: 90vw;
-    margin: 0 auto;
-    padding: 30px 20px;
-    text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
 }
 
+/*--- Classes ---*/
 .logo {
   width: 12vh;
   display: block;
@@ -86,103 +89,103 @@ main {
   width: 45%;
 }
 
+/*--- Navigation ---*/
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #434343;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #434343;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  font-family: phattOutline;
+}
+  
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+  
+li a:hover {
+  background-color: #2a90dd;
+  font-family: phattFont;
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  margin: 5px;
+  height: 20vh;
+  border: 3px solid black;
+}
+
+/*--- Tables and Containers ---*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #9a9a9a;
+  padding: 30px;
+  border-radius: 8px;
+  border: 3px solid black;
+}
+
+table, th, td {
+  border: 3px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  font-size: larger;
+}
+
+th {
+  background-color: #2a90dd;
+  color: white;
+  font-family: phattFont;
+}
+
+.plainTable {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .mainImg {
+    max-width: 100%;
+    margin: 2px auto 10px auto;
+    display: block;
+    border-radius: 6px;
+    border: 2px solid black;
+  }
+
+  .wesImg {
+    width: 80%;
   }
 
   li {
-    display: inline-block;
-    font-family: phattOutline;
-    font-size: larger;
-  }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 18px 30px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #2a90dd;
-    border-radius: 5px;
-    font-family: phattFont;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  video {
-    margin: 5px;
-    height: 20vh;
-    border: 3px solid black;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #9a9a9a;
-    padding: 30px;
-    border-radius: 8px;
-    border: 3px solid black;
-  }
-
-  table, th, td {
-    border: 3px solid black;
-  }
-
-  table {
-    border-collapse: collapse;
-  }
-
-  th, td {
-    padding: 10px;
-    font-size: larger;
-  }
-
-  th {
-    background-color: #2a90dd;
-    color: white;
-    font-family: phattFont;
+    font-size: smaller;
   }
 
   .plainTable {
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px;
+    font-size: smaller;
   }
-
-  @media only screen and (max-width: 600px) {
-
-    .mainImg {
-      max-width: 100%;
-      margin: 2px auto 10px auto;
-      display: block;
-      border-radius: 6px;
-      border: 2px solid black;
-    }
-
-    .wesImg {
-      width: 80%;
-    }
-
-    li {
-      font-size: smaller;
-    }
-
-    .plainTable {
-      margin: 15px;
-      font-size: smaller;
-    }
-  }
+}
