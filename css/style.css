@@ -103,8 +103,7 @@ ul {
 
 li {
   display: inline-block;
-  font-family: phattOutline;
-  font-weight: bold;
+  font-family: phattFont;
 }
   
 li a {
@@ -117,7 +116,7 @@ li a {
   
 li a:hover {
   background-color: #2a90dd;
-  font-family: phattFont;
+  color: black;
 }
 
 img {
