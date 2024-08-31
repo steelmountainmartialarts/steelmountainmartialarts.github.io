@@ -1,142 +1,241 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/*--- Fonts ---*/
+@font-face {
+  font-family: phattFont;
+  src: url(phatt_font.otf);
+}
+
+@font-face {
+  font-family: phattOutline;
+  src: url(phatt_outline.otf);
+}
+
+@font-face {
+  font-family: kaushanFont;
+  src: url(KaushanScript-Regular.ttf);
+}
+
+/*--- HTML Elements ---*/
 body {
-    padding-bottom: 200px;
-    min-height: 100vh;
-    position: relative;
-    font-size: larger;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 350px;
+  min-height: 100vh;
+  position: relative;
+  font-size: larger;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-    text-align: center;
-    font-size:larger;
-    margin-bottom: 10px;
-    font-style: italic;
+  font-family: phattFont;
+  text-align: center;
+  font-size: 2.3vh;
+}
+
+h2 {
+  font-family: phattFont;
+  text-align: center;
 }
 
 footer {
-    background-color: #434343;
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 40px;
-    text-align: center;
-    color: white;
-    font-size: smaller;
-    border-top: 5px solid black;    
+  background-color: #434343;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: smaller;
+  border-top: 3px solid black;    
 }
 
 main {   
-    width: 90vw;
-    margin: 0 auto;
-    padding: 30px 20px;
-    text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-#map {
-    display: block;
-    align-self: center;
-    border: 5px solid black;
-    border-radius: 10px;
-    height: 50vh;
-    width: 80%;
-    margin: 4px auto 4px auto;
-}
-
+/*--- Classes ---*/
 .logo {
-    width: 25%;
-    height: 25%;
-    display: block;
-    margin: 2px auto auto auto;
+  width: 12vh;
+  display: block;
+  margin: 10px auto 10px auto;
 }
 
-.gallery {
-  border: 3px solid black;
-  border-radius: 8px;
-  width: 100%;
-  height: 30vh;
-  margin: 5px;
+.headerLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .mainImg {
-    max-width: 60%;
-    height: auto; 
-    margin: 5px auto 10px auto;
-    display: block;
-    border-radius: 8px;
-    border: 5px solid black;
+  max-width: 70%;
+  height: 15%;
+  margin: 5px auto 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: 3px solid black;
 }
 
+.wesImg {
+  border: 3px solid black;
+  border-radius: 6px;
+  width: 40%;
+}
+
+/*--- Navigation ---*/
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #434343;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #434343;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  font-family: phattFont;
+}
+  
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+  
+li a:hover {
+  background-color: #2a90dd;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+/*--- Tables and Containers ---*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #9a9a9a;
+  padding: 30px;
+  border-radius: 8px;
+  border: 3px solid black;
+}
+
+table, th, td {
+  border: 3px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  font-size: larger;
+}
+
+th {
+  background-color: #2a90dd;
+  color: white;
+  font-family: phattFont;
+}
+
+.plainTable {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Gallery --- */
+
+div.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: lightgrey;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.gallery img, video {
+  border: 1px solid black;
+  max-width: 25%;
+  height: auto;
+  align-self: center;
+  margin: auto;
+  margin: 10px;
+}
+
+/*--- Screen Sizes ---*/
+@media only screen and (max-width: 768px) {
+
+  .mainImg {
+    max-width: 100%;
+    margin: 2px auto 10px auto;
+    display: block;
+    border-radius: 6px;
+    border: 2px solid black;
+  }
+
+  .headerLogo {
+    width: 75%;
+  }
+
+  .wesImg {
+    width: 80%;
   }
 
   li {
-    display: inline-block;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #2a90dd;
-    border-radius: 5px;
-    font-weight: bold;
+    font-size: smaller;
   }
 
-  img {
+  .plainTable {
+    margin: 15px;
+    font-size: smaller;
+  }
+
+  li {
+    display: block;
+  }
+
+  li a {
     width: 100%;
   }
 
-  video {
-    margin: 5px;
-    height: 20vh;
-    border: 3px solid black;
+  div.gallery img, video {
+    max-width: 70%;
   }
 
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #9a9a9a;
-    padding: 30px;
-    border-radius: 8px;
-    border: 3px solid black;
+  div.gallery {
+    flex-direction: column;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainImg {
+    max-width: 55%;
   }
 
-  table, th, td {
-    border: 3px solid black;
+  .headerLogo {
+    max-width: 45%;
   }
-
-  table {
-    border-collapse: collapse;
-  }
-
-  th, td {
-    padding: 10px;
-    font-size: larger;
-  }
-
-  th {
-    background-color: #2a90dd;
-    color: white;
-  }
+}
