@@ -22,7 +22,7 @@
 
 /*--- HTML Elements ---*/
 body {
-  padding-bottom: 270px;
+  padding-bottom: 250px;
   min-height: 100vh;
   position: relative;
   font-size: larger;
@@ -45,7 +45,7 @@ footer {
   position:absolute;
   bottom: 0;
   width: 100%;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
   color: white;
   font-size: smaller;
