@@ -22,7 +22,7 @@
 
 /*--- HTML Elements ---*/
 body {
-  padding-bottom: 350px;
+  padding-bottom: 270px;
   min-height: 100vh;
   position: relative;
   font-size: larger;
@@ -52,11 +52,11 @@ footer {
   border-top: 3px solid black;    
 }
 
-main {   
-  width: 90vw;
+main {
   margin: 0 auto;
-  padding: 30px 20px;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*--- Classes ---*/
@@ -64,6 +64,13 @@ main {
   width: 12vh;
   display: block;
   margin: 10px auto 10px auto;
+}
+
+.collage-background {   
+  margin: 0 auto;
+  text-align: center;
+  background-image: url('../images/SMMA\ Collage\ 2.png');
+  background-size: auto;
 }
 
 .headerLogo {
@@ -86,6 +93,16 @@ main {
   border: 3px solid black;
   border-radius: 6px;
   width: 40%;
+}
+
+.home-background {
+  background-color: white;
+  width: 70vw;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 /*--- Navigation ---*/
@@ -123,6 +140,7 @@ img {
 }
 
 /*--- Tables and Containers ---*/
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -177,7 +195,7 @@ div.gallery {
 
 div.gallery img, video {
   border: 1px solid black;
-  max-width: 25%;
+  max-width: 20%;
   height: auto;
   align-self: center;
   margin: auto;
