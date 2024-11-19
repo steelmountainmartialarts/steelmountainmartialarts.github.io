@@ -22,7 +22,7 @@
 
 /*--- HTML Elements ---*/
 body {
-  padding-bottom: 250px;
+  padding-bottom: 230px;
   min-height: 100vh;
   position: relative;
   font-size: larger;
@@ -205,6 +205,18 @@ div.gallery img, video {
 /*--- Screen Sizes ---*/
 @media only screen and (max-width: 768px) {
 
+  .email {
+    font-size: smaller;
+  }
+
+  h1 {
+    font-size: larger;
+  }
+
+  h2 {
+    font-size: smaller;
+  }
+
   .mainImg {
     max-width: 100%;
     margin: 2px auto 10px auto;
@@ -250,10 +262,14 @@ div.gallery img, video {
 
 @media only screen and (min-width: 1200px) {
   .mainImg {
-    max-width: 55%;
+    max-width: 65%;
+  }
+
+  h1 {
+    font-size: xx-large;
   }
 
   .headerLogo {
-    max-width: 45%;
+    max-width: 43%;
   }
 }
