@@ -22,7 +22,7 @@
 
 /*--- HTML Elements ---*/
 body {
-  padding-bottom: 210px;
+  padding-bottom: 230px;
   min-height: 100vh;
   position: relative;
   font-size: larger;
@@ -152,6 +152,20 @@ img {
   border: 3px solid black;
 }
 
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.plan {
+  padding: 2%;
+  border: 5px solid black;
+  margin: 10px;
+  font-weight: 700;
+  font-size: large;
+}
+
 table, th, td {
   border: 3px solid black;
 }
@@ -166,8 +180,8 @@ th, td {
 }
 
 th {
-  background-color: #2a90dd;
-  color: white;
+  background-color: grey;
+  color: black;
   font-family: phattFont;
 }
 
@@ -257,6 +271,15 @@ div.gallery img, video {
   div.gallery {
     flex-direction: column;
   }
+
+  .plans {
+    flex-wrap: wrap;
+  }
+
+  .plan {
+    padding: 2%;
+    width: 450px;
+  }
   
 }
 
@@ -271,5 +294,11 @@ div.gallery img, video {
 
   .headerLogo {
     max-width: 43%;
+  }
+
+  .plan {
+    padding: 5%;
+    max-width: min-content;
+    max-height: min-content;
   }
 }
