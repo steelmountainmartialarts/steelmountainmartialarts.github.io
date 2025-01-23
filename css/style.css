@@ -59,6 +59,13 @@ main {
   padding-right: 30px;
 }
 
+iframe {
+
+  height: 25vw;
+  width: 50vw;
+
+}
+
 /*--- Classes ---*/
 .logo {
   width: 12vh;
@@ -219,6 +226,11 @@ div.gallery img, video {
 /*--- Screen Sizes ---*/
 @media only screen and (max-width: 768px) {
 
+  iframe {
+    height: 35vw;
+    width: 60vw;
+  }
+
   .email {
     font-size: smaller;
   }
@@ -285,6 +297,13 @@ div.gallery img, video {
 @media only screen and (min-width: 1200px) {
   .mainImg {
     max-width: 55%;
+  }
+
+  iframe {
+
+    height: 20vw;
+    width: 40vw;
+  
   }
 
   h1 {
