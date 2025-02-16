@@ -67,6 +67,16 @@ iframe {
 }
 
 /*--- Classes ---*/
+
+.galTitle {
+  color: #2a90dd;
+  background-color: white;
+  width: 20%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo {
   width: 12vh;
   display: block;
