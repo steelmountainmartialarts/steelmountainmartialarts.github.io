@@ -22,7 +22,7 @@
 
 /*--- HTML Elements ---*/
 body {
-  padding-bottom: 260px;
+  padding-bottom: 290px;
   min-height: 100vh;
   position: relative;
   font-size: larger;
@@ -84,8 +84,12 @@ iframe {
 }
 
 .icons {
-  font-size: x-large;
-  margin: 10px;
+  font-size: xxx-large;
+  margin: 20px;
+  color: white;
+}
+
+.icons:visited {
   color: white;
 }
 
