@@ -22,7 +22,7 @@
 
 /*--- HTML Elements ---*/
 body {
-  padding-bottom: 230px;
+  padding-bottom: 260px;
   min-height: 100vh;
   position: relative;
   font-size: larger;
@@ -38,6 +38,13 @@ h1 {
 h2 {
   font-family: phattFont;
   text-align: center;
+}
+
+p {
+  max-width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -68,8 +75,24 @@ iframe {
 
 /*--- Classes ---*/
 
+.textBox {
+  background-color: lightgray;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+.icons {
+  font-size: x-large;
+  margin: 10px;
+  color: white;
+}
+
 .galTitle {
-  color: #2a90dd;
+  background-color: white;
+  border: 3px solid black;
+  max-width: 10vw;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -98,6 +121,14 @@ iframe {
 .mainImg {
   max-width: 70%;
   height: 15%;
+  margin: 5px auto 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: none;
+}
+
+.medImg {
+  width: 30vw;
   margin: 5px auto 10px auto;
   display: block;
   border-radius: 8px;
@@ -165,6 +196,20 @@ img {
   padding: 30px;
   border-radius: 8px;
   border: 3px solid black;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  font-weight: 300;
+  font-size: large;
+  margin: 20px;
 }
 
 .plans {
@@ -251,11 +296,28 @@ div.gallery img, video {
     font-size: smaller;
   }
 
+  p {
+    max-width: 98%;
+  }
+
+
+  .medImg {
+    width: 60vw;
+  }
+
   .mainImg {
     max-width: 100%;
     margin: 2px auto 10px auto;
     display: block;
     border-radius: 6px;
+  }
+
+  .review {
+    font-size: smaller;
+  }
+
+  .home-background {
+    width: 85vw;
   }
 
   .headerLogo {
