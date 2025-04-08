@@ -75,12 +75,32 @@ iframe {
 
 /*--- Classes ---*/
 
+.merchActionShot {
+  background-image: url("../images/merchActionShot1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20vw;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.actionTitle {
+  text-align: left;
+  font-size: xx-large;
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+
 .textBox {
   background-color: lightgray;
   border-radius: 10px;
   border: 1px solid black;
   margin: 10px;
   padding: 5px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icons {
@@ -94,12 +114,11 @@ iframe {
 }
 
 .galTitle {
-  background-color: white;
-  border: 3px solid black;
-  max-width: 10vw;
-  border-radius: 10px;
+  color: #2a90dd;
   margin-left: auto;
   margin-right: auto;
+  -webkit-text-stroke: 1px black;
+  font-size: xxx-large;
 }
 
 .logo {
@@ -140,7 +159,7 @@ iframe {
 }
 
 .wesImg {
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 6px;
   width: 40%;
 }
@@ -273,7 +292,7 @@ div.gallery {
 
 div.gallery img, video {
   border: 1px solid black;
-  max-width: 20%;
+  max-width: 35%;
   height: auto;
   align-self: center;
   margin: auto;
@@ -282,6 +301,11 @@ div.gallery img, video {
 
 /*--- Screen Sizes ---*/
 @media only screen and (max-width: 768px) {
+
+  .actionTitle {
+    font-size: larger;
+    float: none;
+  }
 
   iframe {
     height: 35vw;
@@ -365,12 +389,20 @@ div.gallery img, video {
     padding: 2%;
     width: 450px;
   }
+
+  div.gallery img, video {
+    max-width: 95%;
+  }
   
 }
 
 @media only screen and (min-width: 1200px) {
   .mainImg {
     max-width: 55%;
+  }
+
+  p {
+    max-width: 75%;
   }
 
   iframe {
@@ -392,5 +424,17 @@ div.gallery img, video {
     padding: 5%;
     max-width: min-content;
     max-height: min-content;
+  }
+
+  .actionTitle {
+    font-size: xx-large;
+  }
+
+  .merchActionShot {
+    padding: 12vw;
+  }
+
+  div.gallery img, video {
+    max-width: 25%;
   }
 }
