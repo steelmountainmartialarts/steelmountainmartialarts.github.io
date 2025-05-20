@@ -320,6 +320,10 @@ div.gallery img, video {
 /*--- Screen Sizes ---*/
 @media only screen and (max-width: 768px) {
 
+  .smallTitle {
+    font-size: smaller;
+  }
+
   .plain-flex {
     flex-wrap: wrap;
   }
@@ -375,7 +379,7 @@ div.gallery img, video {
   }
 
   .wesImg {
-    width: 80%;
+    width: 50%;
   }
 
   li {
@@ -415,10 +419,15 @@ div.gallery img, video {
   div.gallery img, video {
     max-width: 95%;
   }
+
+  .textBox {
+    max-width: 100%;
+  }
   
 }
 
 @media only screen and (min-width: 1200px) {
+
   .mainImg {
     max-width: 55%;
   }
