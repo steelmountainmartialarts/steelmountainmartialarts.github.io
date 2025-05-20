@@ -75,6 +75,14 @@ iframe {
 
 /*--- Classes ---*/
 
+.smallTitle {
+  font-family: phattFont;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .merchActionShot {
   background-image: url("../images/merchActionShot1.jpg");
   background-repeat: no-repeat;
@@ -172,6 +180,16 @@ iframe {
   margin-right: auto;
   border-left: 1px solid black;
   border-right: 1px solid black;
+}
+
+.plain-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.plain-flex-container {
+  margin: 5px;
 }
 
 /*--- Navigation ---*/
@@ -301,6 +319,10 @@ div.gallery img, video {
 
 /*--- Screen Sizes ---*/
 @media only screen and (max-width: 768px) {
+
+  .plain-flex {
+    flex-wrap: wrap;
+  }
 
   .actionTitle {
     font-size: larger;
@@ -436,5 +458,20 @@ div.gallery img, video {
 
   div.gallery img, video {
     max-width: 25%;
+  }
+
+  .medImg {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+
+  .medImg {
+    width: 22vw;
+  }
+
+  p {
+    max-width: 55%;
   }
 }
