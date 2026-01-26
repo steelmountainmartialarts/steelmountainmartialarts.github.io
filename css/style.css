@@ -192,6 +192,36 @@ iframe {
   margin: 5px;
 }
 
+.adult-class { 
+  background-color: #2a90dd; 
+  color: white; 
+  font-weight: bold; 
+}
+
+.basics-class { 
+  background-color: lightcyan; 
+  font-weight: bold; 
+}
+
+.family-class { 
+  background-color: lightyellow; 
+}
+
+.prep-class { 
+  background-color: lightcoral; 
+  font-weight: bold; 
+}
+
+.private-class { 
+  font-weight: bold; 
+}
+
+.default-class {
+  background-color: #ffffff; /* White background */
+  color: #333;               /* Standard dark text */
+  font-weight: normal;
+}
+
 /*--- Navigation ---*/
 ul {
   list-style-type: none;
