@@ -112,9 +112,9 @@ iframe {
 
 .actionTitle {
   text-align: center;
-  font-size: xxx-large !important;
+  font-size: xx-large;
   color: white;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 2px black;
 }
 
 .textBox {
