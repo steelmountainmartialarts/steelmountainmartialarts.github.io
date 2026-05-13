@@ -68,8 +68,8 @@ main {
 
 iframe {
 
-  height: 25vw;
-  width: 50vw;
+  height: 25vw !important;
+  width: 50vw !important;
 
 }
 
@@ -92,12 +92,29 @@ iframe {
   border-bottom: 3px solid black;
 }
 
+.contactStudioShot {
+  background-image: url("../images/locationPhoto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12vw;
+  width: 100%;
+  border-top: 3px solid black;
+}
+
+.homeDramaShot {
+  background-image: url("../images/dramaticCoverArt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 11vw;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
 .actionTitle {
   text-align: center;
-  font-size: xx-large;
+  font-size: xxx-large !important;
   color: white;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke: 3px black;
 }
 
 .textBox {
