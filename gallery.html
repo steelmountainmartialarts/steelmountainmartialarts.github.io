@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-        <link rel="icon" type="image/x-icon" href="images/Steel_Mountain_Emerson_20240818.ico">
+        <link class="favicon" rel="icon" type="image/x-icon" href="images/Steel_Mountain_Emerson_20240818.ico">
     </head>
 
     <body>
@@ -30,48 +30,12 @@
 
             <br><br><br><br>
 
-            <h1 class="galTitle">2025</h1>
-            <br>
-            <div class="gallery">
-
-                <img src="images/nickWin.jpg" />
-                <img src="images/smmaAtTourny.jpg" />
-                <img src="images/bags.jpg" />
-                <img src="images/frostyFriends1.jpeg" alt="">
-                <img src="images/frostyFriends2.jpeg" alt="">
-                <img src="images/summerSmash1.jpeg" alt="">
-                <img src="images/summerSmash2.jpeg" alt="">
-
-            </div>
-
-            <br><br>
-
-            <h1 class="galTitle">2024</h1>
-            <br>
-            <div class="gallery">
-
-                <img src="images/glovesAndMirror.jpg" />
-                <img src="images/throughtTheYears.jpg" />
-                <img src="images/emKick.JPG" />
-                <img src="images/youngSparring.jpg" alt="">
-                <img src="images/nateEmDad.jpg" alt="">
-                <img src="images/spar1.jpg" alt="">
-                <img src="images/spar2.jpg" alt="">
-                <img src="images/train1.jpg" alt="">
-                <img src="images/focus1.jpg" alt="">
-                <img src="images/spar3.jpg" alt="">
-                <img src="images/spar4.jpg" alt="">
-                <img src="images/spar5.jpg" alt="">
-                <img src="images/lineup.JPG" alt="">
-                
-                <video controls>
-                    <source src="images/theWall.MP4" type="video/mp4">
-                </video>
-
-                <video controls>
-                    <source src="images/trainVid1.mp4" type="video/mp4">
-                </video>
-
+            <!-- 
+              This is the magic anchor point. The new gallery.js script will target 
+              this ID and build out all your years, grids, images, and videos dynamically.
+            -->
+            <div id="gallery-container">
+                <p style="text-align: center; color: white; font-family: sans-serif;">Loading gallery...</p>
             </div>
 
             <br><br><br><br><br>
@@ -90,5 +54,10 @@
             <label style="font-size: x-small; font-weight: bold;">Website Made By: Brendan Crawford<br>Logo Designed By: Emerson</label>
         </footer>
 
+        <!-- 
+          We link your external gallery script right here before the closing body tag 
+          so that it loads after the rest of the HTML elements are ready.
+        -->
+        <script src="js/gallery.js"></script>
     </body>
 </html>
