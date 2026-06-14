@@ -426,7 +426,7 @@ div.gallery img, video {
         padding: 0 10px; 
     }
     .iframe-wrapper {
-        height: 45vh; /* Bumps it to 80% of screen height on mobile to make room for phone UI */
+        height: 13vh; /* Bumps it to 80% of screen height on mobile to make room for phone UI */
     }
 }
 
