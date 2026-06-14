@@ -388,6 +388,43 @@ div.gallery img, video {
   margin: 10px;
 }
 
+/*--- Sign-Up Form ---*/
+
+/* --- COMPUTER / DESKTOP SCREEN RULES --- */
+/* This is the default size used for normal laptops and monitors */
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Forces a normal, clean height on big screens */
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+}
+
+/* Tells the Google Form to fill out the 600px height cleanly */
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* --- MOBILE PHONE SCREEN RULES --- */
+/* This code ONLY kicks in if the screen is narrower than 600 pixels (like a smartphone) */
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 0 10px; 
+    }
+    
+    .iframe-wrapper {
+        height: auto; /* Disables the desktop fixed height */
+        padding-top: 180%; /* Stretches it vertically so the mobile buttons fit without crowding */
+    }
+}
+
 /*--- Screen Sizes ---*/
 @media only screen and (max-width: 768px) {
 
