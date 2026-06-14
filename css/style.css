@@ -394,12 +394,11 @@ div.gallery img, video {
 .iframe-wrapper {
     position: relative;
     width: 100%;
-    height: 30vh; /* Exactly 70% of the screen height on desktop */
+    height: 20vh; /* Exactly 70% of the screen height on desktop */
     border-radius: 8px;
     border: 1px solid #e2e2e2;
     background: #ffffff;
     overflow-y: auto; /* Unlocks vertical scrolling */
-    -webkit-overflow-scrolling: touch; /* Forces smooth scrolling on iPhones */
 }
 
 .iframe-wrapper iframe {
@@ -422,9 +421,6 @@ div.gallery img, video {
 
 /* RESPONSIVE PHONE TWEAK */
 @media (max-width: 600px) {
-    .signup-container {
-        padding: 0 10px; 
-    }
     .iframe-wrapper {
         height: 13vh; /* Bumps it to 80% of screen height on mobile to make room for phone UI */
     }
