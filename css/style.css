@@ -390,38 +390,43 @@ div.gallery img, video {
 
 /*--- Sign-Up Form ---*/
 
-/* --- COMPUTER / DESKTOP SCREEN RULES --- */
-/* This is the default size used for normal laptops and monitors */
+/* THE FIX: Replaces old height/padding rules with smooth scrolling viewport tracking */
 .iframe-wrapper {
     position: relative;
     width: 100%;
-    height: 600px; /* Forces a normal, clean height on big screens */
-    overflow: hidden;
+    height: 30vh; /* Exactly 70% of the screen height on desktop */
     border-radius: 8px;
     border: 1px solid #e2e2e2;
+    background: #ffffff;
+    overflow-y: auto; /* Unlocks vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Forces smooth scrolling on iPhones */
 }
 
-/* Tells the Google Form to fill out the 600px height cleanly */
 .iframe-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    
+    /* Forces the iframe to strictly take up 100% of the container width */
+    width: 100% !important; 
+    min-width: 100%;
+    
     height: 100%;
     border: 0;
+    display: block;
+    
+    /* Eliminates Google's forced internal side-paddings on mobile */
+    margin: 0;
+    padding: 0;
 }
 
-
-/* --- MOBILE PHONE SCREEN RULES --- */
-/* This code ONLY kicks in if the screen is narrower than 600 pixels (like a smartphone) */
+/* RESPONSIVE PHONE TWEAK */
 @media (max-width: 600px) {
     .signup-container {
         padding: 0 10px; 
     }
-    
     .iframe-wrapper {
-        height: auto; /* Disables the desktop fixed height */
-        padding-top: 180%; /* Stretches it vertically so the mobile buttons fit without crowding */
+        height: 45vh; /* Bumps it to 80% of screen height on mobile to make room for phone UI */
     }
 }
 
